@@ -19,6 +19,7 @@
 
 #### Fixes
 
+- Hardened Eidos AEAD tag equality with constant-time comparison and cleared temporary secret-key buffers during serialization and deserialization.
 - Corrected native and recursive Eidos proof-security estimates to account for restricted Fiat-Shamir challenges. Eidos has a 126-bit generic collision-resistance ceiling and restricted field outputs; see the [security and usage guide](docs/src/design/eidos-security.md).
 - Fixed lifted STARK proving for quotient domains smaller than the SIMD packing width ([#3910](https://github.com/0xMiden/miden-vm/pull/3910)).
 
