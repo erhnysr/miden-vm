@@ -12,6 +12,9 @@
 //! the quadratic extension field. Horner evaluation starts with one, which binds the number of
 //! coefficients. A final multiplication by the evaluation point makes every input coefficient
 //! multiply a positive power of that point. The second half of the MAC key masks the result.
+//!
+//! [`decrypt_felts_expanded_authenticated`]:
+//!     crate::aead::aead_eidos::expanded::decrypt_felts_expanded_authenticated
 
 use alloc::vec::Vec;
 
